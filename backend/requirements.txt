@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+python-multipart
+pdfminer.six
+python-docx
