@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./App.css";
 
 function App() {
@@ -6,12 +7,15 @@ function App() {
   const [jobDesc, setJobDesc] = useState("");
   const [result, setResult] = useState(null);
   const [loading, setLoading] = useState(false);
+ 
 
   const handleAnalyze = async () => {
     if (!resume || !jobDesc) {
       alert("Please upload resume and enter job description");
       return;
     }
+
+
 
     setLoading(true);
 
@@ -35,10 +39,11 @@ function App() {
   };
 
   return (
-    
-
       <div className="card">
         <label>📃 Job Description</label>
+
+
+
 
         <textarea
           rows="5"

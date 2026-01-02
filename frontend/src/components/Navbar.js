@@ -1,9 +1,13 @@
 import React from "react";
-function Navbar({ setDarkMode }) {
+
+function Navbar({ darkMode, setDarkMode }) {
   return (
-    <button onClick={() => setDarkMode(prev => !prev)}>
-      Toggle Dark Mode
-    </button>
+    <nav>
+      <button onClick={() => setDarkMode(!darkMode)}>
+        {darkMode ? "Light Mode" : "Dark Mode"}
+      </button>
+    </nav>
   );
-} 
+}
+
 export default Navbar;

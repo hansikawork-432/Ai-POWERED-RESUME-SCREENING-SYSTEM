@@ -10,8 +10,8 @@ const [darkMode, setDarkMode] = useState(false);
 
 
   return (
-    <>
-      <Navbar setDarkMode={setDarkMode} />
+    <div className={darkMode ? "dark-mode" : "light-mode"}>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <App />
       {showExtras && (
         <>
@@ -19,7 +19,7 @@ const [darkMode, setDarkMode] = useState(false);
           <Charts result={{ score: 60 }} />
         </>
       )}
-    </>
+    </div>
   );
 }
 

@@ -121,3 +121,13 @@ label{
     background-color: #9387ea;
     padding: 20px;
 }
+.dark-mode {
+  background-color: #0f1111;
+  background-image: url(../../../../../Downloads/backgroung.image.jpg);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.dark-mode .card {
+  background: #1c1c1c;
+}
